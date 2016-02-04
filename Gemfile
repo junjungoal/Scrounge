@@ -12,6 +12,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'haml-rails'
 gem 'bootstrap-sass'
 gem 'erb2haml'
+gem 'devise'
 
 group :development, :test do
   gem 'pry-rails'
