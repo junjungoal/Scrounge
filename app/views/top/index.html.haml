@@ -14,12 +14,6 @@
             %a.page-scroll{:href => "#about"} About
           %li
             %a.page-scroll{:href => "#services"} Services
-          %li
-            %a.page-scroll{:href => "#portfolio"} Portfolio
-          %li
-            %a.page-scroll{:href => "#contact"} Contact
-      / /.navbar-collapse
-    / /.container-fluid
   %header
     .header-content
       .header-content-inner
@@ -34,7 +28,7 @@
           %h2.section-heading あなたが欲しいものを友達に伝えよう
           %hr.light/
           %p.text-faded あなたが今欲しい物を追加しましょう。誕生日や記念日に買ってもらえるかもしれません。
-          %a.btn.btn-default.btn-xl{:href => "#"} Get Started!
+          = link_to "Get Started!", new_user_registration_path, class: "btn btn-default btn-xl"
   %section#services
     .container
       .row

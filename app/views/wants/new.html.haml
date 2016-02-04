@@ -1,0 +1,7 @@
+%h3.text-center 欲しいものを追加する
+= form_for @want do |f|
+  .text-center
+    %h5 タイトル
+    = f.text_field :title
+  .text-center
+    = f.submit "Add"
