@@ -36,6 +36,9 @@ GEM
       minitest (~> 5.1)
       thread_safe (~> 0.3, >= 0.3.4)
       tzinfo (~> 1.1)
+    amazon-ecs (2.4.0)
+      nokogiri (~> 1.4)
+      ruby-hmac (~> 0.3)
     arel (6.0.3)
     autoprefixer-rails (6.1.1)
       execjs
@@ -51,6 +54,11 @@ GEM
       activesupport (>= 3.0.0)
       uniform_notifier (~> 1.9.0)
     byebug (8.2.2)
+    carrierwave (0.10.0)
+      activemodel (>= 3.2.0)
+      activesupport (>= 3.2.0)
+      json (>= 1.7)
+      mime-types (>= 1.16)
     coderay (1.1.0)
     coffee-rails (4.1.1)
       coffee-script (>= 2.2.0)
@@ -171,6 +179,7 @@ GEM
       rspec-mocks (~> 3.1.0)
       rspec-support (~> 3.1.0)
     rspec-support (3.1.2)
+    ruby-hmac (0.4.0)
     ruby_parser (3.7.2)
       sexp_processor (~> 4.1)
     sass (3.4.21)
@@ -216,9 +225,11 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  amazon-ecs
   bootstrap-sass
   bullet
   byebug
+  carrierwave
   coffee-rails (~> 4.1.0)
   devise
   erb2haml

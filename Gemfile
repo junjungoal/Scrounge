@@ -13,6 +13,8 @@ gem 'haml-rails'
 gem 'bootstrap-sass'
 gem 'erb2haml'
 gem 'devise'
+gem 'amazon-ecs'
+gem 'carrierwave'
 
 group :development, :test do
   gem 'pry-rails'
