@@ -1,54 +1,38 @@
-%body#page-top
-  %nav#mainNav.navbar.navbar-default.navbar-fixed-top
-    .container-fluid
-      .navbar-header
-        %button.navbar-toggle.collapsed{"data-target" => "#bs-example-navbar-collapse-1", "data-toggle" => "collapse", :type => "button"}
-          %span.sr-only Toggle navigation
-          %span.icon-bar
-          %span.icon-bar
-          %span.icon-bar
-        %a.navbar-brand.page-scroll{ href: "/"} Scrounge
-      #bs-example-navbar-collapse-1.collapse.navbar-collapse
-        %ul.nav.navbar-nav.navbar-right
-          %li
-            %a.page-scroll{:href => "#about"} About
-          %li
-            %a.page-scroll{:href => "#services"} Services
-  %header
-    .header-content
-      .header-content-inner
-        %h1 Scrounge
-        %hr/
-        %p あなたが欲しいものを友達と共有しよう。
-        %a.btn.btn-primary.btn-xl.page-scroll{:href => "#about"} Find Out More
-  %section#about.bg-primary
-    .container
-      .row
-        .col-lg-8.col-lg-offset-2.text-center
-          %h2.section-heading あなたが欲しいものを友達に伝えよう
-          %hr.light/
-          %p.text-faded あなたが今欲しい物を追加しましょう。誕生日や記念日に買ってもらえるかもしれません。
-          = link_to "Get Started!", new_user_registration_path, class: "btn btn-default btn-xl"
-  %section#services
-    .container
-      .row
-        .col-lg-12.text-center
-          %h2.section-heading Scroungeとは
-          %hr.primary/
-    .container
-      .row
-        .col-lg-4.col-md-6.text-center
-          .service-box
-            %i.fa.fa-4x.fa-diamond.wow.bounceIn.text-primary
-            %h3 欲しいものリスト共有
-            %p.text-muted あなたのあなたのほしいものを友達と共有することができます。
-        .col-lg-4.col-md-6.text-center
-          .service-box
-            %i.fa.fa-4x.fa-paper-plane.wow.bounceIn.text-primary{"data-wow-delay" => ".1s"}
-            %h3 プレゼント機能
-            %p.text-muted 友達が欲しいものを購入してプレゼントしてあげましょう。
-        .col-lg-4.col-md-6.text-center
-          .service-box
-            %i.fa.fa-4x.fa-newspaper-o.wow.bounceIn.text-primary{"data-wow-delay" => ".2s"}
-            %h3 タイムライン機能
-            %p.text-muted 友達が欲しいものがタイムラインで流れます。あなたも興味があればコメントしましょう。
+%header
+  .header-content
+    .header-content-inner
+      %h1 Scrounge
+      %hr/
+      %p あなたが欲しいものを友達と共有しよう。
+      %a.btn.btn-primary.btn-xl.page-scroll{:href => "#about"} Find Out More
+%section#about.bg-primary
+  .container
+    .row
+      .col-lg-8.col-lg-offset-2.text-center
+        %h2.section-heading あなたが欲しいものを友達に伝えよう
+        %hr.light/
+        %p.text-faded あなたが今欲しい物を追加しましょう。誕生日や記念日に買ってもらえるかもしれません。
+        = link_to "Get Started!", new_user_registration_path, class: "btn btn-default btn-xl"
+%section#services
+  .container
+    .row
+      .col-lg-12.text-center
+        %h2.section-heading Scroungeとは
+        %hr.primary/
+  .container
+    .row
+      .col-lg-4.col-md-6.text-center
+        .service-box
+          %i.fa.fa-4x.fa-diamond.wow.bounceIn.text-primary
+          %h3 欲しいものリスト共有
+          %p.text-muted あなたのあなたのほしいものを友達と共有することができます。
+      .col-lg-4.col-md-6.text-center
+        .service-box
+          %i.fa.fa-4x.fa-paper-plane.wow.bounceIn.text-primary{"data-wow-delay" => ".1s"}
+          %h3 プレゼント機能
+          %p.text-muted 友達が欲しいものを購入してプレゼントしてあげましょう。
+      .col-lg-4.col-md-6.text-center
+        .service-box
+          %i.fa.fa-4x.fa-newspaper-o.wow.bounceIn.text-primary{"data-wow-delay" => ".2s"}
+          %h3 タイムライン機能
+          %p.text-muted 友達が欲しいものがタイムラインで流れます。あなたも興味があればコメントしましょう。
