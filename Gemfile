@@ -15,6 +15,7 @@ gem 'erb2haml'
 gem 'devise'
 gem 'amazon-ecs'
 gem 'config'
+gem 'jquery-turbolinks'
 
 group :development, :test do
   gem 'pry-rails'

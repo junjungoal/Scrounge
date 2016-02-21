@@ -1,11 +1,14 @@
 class WantsController < ApplicationController
   before_action :authenticate_user!
+  include SearchableController
+
   def index
     @wants = Want.all
   end
 
-  def new
-    @want = Want.new
+  def search
+    @wants = Want.search_wants_by_amazon(params[:keyword]) if params[:keyword].present?
+    render :increment_search if params[:type].present?
   end
 
   def create
@@ -15,6 +18,12 @@ class WantsController < ApplicationController
     else
       render :new
     end
+  end
+
+  def show
+  end
+
+  def new
   end
 
   private
